@@ -1,0 +1,50 @@
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+html body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(3, 100vh);
+}
+
+.landing {
+  background-color: gray;
+}
+
+.user-card-2 {
+  background-color: #fdca8b;
+}
+
+.user-card-3 {
+  background-color: #ffb458;
+}
+
+:root {
+  --br-images: 50px;
+}
+
+.large-card-clasic {
+  background-image: url(/assets/media/img/img-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.tarjet-container {
+  background-color: red;
+}
+
+.br-img {
+  width: 10vw;
+  height: 10vh;
+}
+
+/*# sourceMappingURL=custom.css.map */

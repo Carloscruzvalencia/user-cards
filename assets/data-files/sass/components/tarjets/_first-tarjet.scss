@@ -1,0 +1,21 @@
+// background set
+.large-card-clasic{
+    background-image: url(/assets/media/img/img-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    // grid clases
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+// actual card css styles
+.tarjet-container{
+    background-color: red;
+}
+
+.br-img{
+    width: 10vw;
+    height: 10vh;
+}

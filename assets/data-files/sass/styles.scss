@@ -1,0 +1,37 @@
+// web page customization
+::-webkit-scrollbar {
+    display: none !important;
+}
+
+html {
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+}
+
+main {
+    display: grid;
+    grid-template-rows: repeat(3, 100vh);
+}
+
+// temporal code
+.landing {
+    background-color: gray;
+}
+
+.user-card-2 {
+    background-color: rgb(253, 202, 139);
+}
+
+.user-card-3 {
+    background-color: rgb(255, 180, 88);
+}
+
+// modifiers
+:root {
+    --br-images: 50px;
+}
+
+// imports
+@import "components/tarjets/_first-tarjet.scss";
