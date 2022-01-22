@@ -28,10 +28,14 @@ main {
     background-color: rgb(255, 180, 88);
 }
 
+// G fonts imports
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 // modifiers
 :root {
-    --br-images: 50px;
+    --br-images: 100%;
+    --poppinsXlh300:'Poppins', sans-serif;
 }
 
-// imports
+// styles imports
 @import "components/tarjets/_first-tarjet.scss";

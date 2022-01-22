@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 ::-webkit-scrollbar {
   display: none !important;
 }
@@ -25,7 +26,8 @@ main {
 }
 
 :root {
-  --br-images: 50px;
+  --br-images: 100%;
+  --poppinsXlh300:"Poppins", sans-serif;
 }
 
 .large-card-clasic {
@@ -33,16 +35,39 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
   display: grid;
   justify-content: center;
   align-content: center;
 }
 
 .tarjet-container {
-  background-color: red;
+  background-color: #bdbdbdde;
+  width: 85vw;
+  height: 65vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  top: 85vh;
+  border-radius: 10px;
+  transition: 0.5s linear;
+}
+
+.large-card-clasic:hover .tarjet-container {
+  border-radius: 30px;
+  background-color: #bdbdbd;
 }
 
 .br-img {
+  width: 19vw;
+  height: 32vh;
+  border-radius: var(--br-images);
+  justify-self: center;
+  align-self: center;
+}
+
+#cuad {
+  background-color: rebeccapurple;
   width: 10vw;
   height: 10vh;
 }

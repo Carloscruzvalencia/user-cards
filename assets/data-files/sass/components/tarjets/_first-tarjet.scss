@@ -1,9 +1,14 @@
+// @import "../../styles.scss";
+
 // background set
 .large-card-clasic{
     background-image: url(/assets/media/img/img-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    // appear effect
+    overflow: hidden;
 
     // grid clases
     display: grid;
@@ -12,10 +17,29 @@
 }
 // actual card css styles
 .tarjet-container{
-    background-color: red;
+    background-color: #bdbdbdde;
+    width: 85vw;
+    height: 65vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    top: 85vh;
+    border-radius: 10px;
+    transition: 0.5s linear;
 }
-
+.large-card-clasic:hover .tarjet-container{
+    border-radius: 30px;
+    background-color: #bdbdbd;
+}
 .br-img{
+    width: 19vw;
+    height: 32vh;
+    border-radius: var(--br-images);
+    justify-self: center;
+    align-self: center;
+}
+#cuad{
+    background-color: rebeccapurple;
     width: 10vw;
     height: 10vh;
 }
