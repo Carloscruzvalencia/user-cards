@@ -1,0 +1,17 @@
+            &lt;div class="tarjet-container"&gt;
+                &lt;img src="assets/media/img/user-1.jpg" alt="" class="br-img"&gt;
+                &lt;div class="Content-container"&gt;
+                    &lt;h2 class="user-name"&gt;Emma Edwards&lt;/h2&gt;
+                    &lt;hr class="Tarjet-breakline"&gt;
+                    &lt;p class="Tarjet-description"&gt;
+                        Dolor libero nunc eros facilisi. Suspendisse magna fusce faucibus nibh. Eget cursus sapien proin
+                        feugiat sit condimentum morbi aliquam. Convallis integer massa lectus scelerisque nibh etiam.
+                        Tellus
+                        est donec vehicula massa turpis eu.
+                        &lt;br&gt;&lt;br&gt;
+                        Sed pellentesque quis a consectetur scelerisque. Aliquet duis viverra condimentum scelerisque
+                        sollicitudin nunc urna massa. Egestas porttitor commodo nisl enim varius facilisis consectetur
+                        blandit. A neque in massa ut egestas.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;

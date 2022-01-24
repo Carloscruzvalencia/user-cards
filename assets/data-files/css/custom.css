@@ -10,19 +10,25 @@ html body {
 
 main {
   display: grid;
-  grid-template-rows: repeat(3, 100vh);
+  grid-template-rows: 100vh 100vh 50vh 100vh 50vh 100vh 50vh 10vh;
 }
 
 .landing {
   background-color: gray;
 }
 
-.user-card-2 {
-  background-color: #fdca8b;
+textarea {
+  height: 30vh;
+  width: 50vw;
+  border: none;
+  background: transparent;
+  color: black;
+  margin-top: 3vh;
 }
 
-.user-card-3 {
-  background-color: #ffb458;
+.copy-code {
+  justify-self: center;
+  align-self: center;
 }
 
 :root {
@@ -41,6 +47,12 @@ main {
   align-content: center;
 }
 
+#cuad {
+  background-color: rebeccapurple;
+  width: 10vw;
+  height: 10vh;
+}
+
 .tarjet-container {
   background-color: #bdbdbdde;
   width: 85vw;
@@ -52,24 +64,63 @@ main {
   border-radius: 10px;
   transition: 0.5s linear;
 }
-
-.large-card-clasic:hover .tarjet-container {
-  border-radius: 30px;
-  background-color: #bdbdbd;
-}
-
-.br-img {
+.tarjet-container .br-img {
   width: 19vw;
   height: 32vh;
   border-radius: var(--br-images);
   justify-self: center;
   align-self: center;
 }
+.tarjet-container .Content-container {
+  display: grid;
+}
+.tarjet-container .Content-container .user-name {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 3em;
+  align-self: end;
+  grid-area: 1/1;
+}
+.tarjet-container .Content-container .Tarjet-breakline {
+  align-self: end;
+  height: 0.3vh;
+  background-color: white;
+  border: none;
+  grid-area: 1/1;
+  margin-left: 0vw;
+  margin-top: 6vh;
+  width: 0vw;
+  transition: 1s;
+  margin-bottom: 0vh;
+}
+.tarjet-container .Content-container .Tarjet-description {
+  font-size: 1.3em;
+  text-align: justify;
+  width: 40vw;
+  justify-self: start;
+}
 
-#cuad {
-  background-color: rebeccapurple;
-  width: 10vw;
-  height: 10vh;
+.tarjet-container:hover {
+  border-radius: 30px;
+  background-color: #bdbdbd;
+}
+
+.tarjet-container:hover .Tarjet-breakline {
+  width: 18vw;
+}
+
+.large-card-clasic-code {
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.large-card-clasic-code .html-code {
+  display: grid;
+  grid-area: 1/1;
+}
+.large-card-clasic-code .css-code {
+  display: grid;
+  grid-area: 1/2;
 }
 
 /*# sourceMappingURL=custom.css.map */

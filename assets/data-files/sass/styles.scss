@@ -12,20 +12,24 @@ html {
 
 main {
     display: grid;
-    grid-template-rows: repeat(3, 100vh);
+    grid-template-rows: 100vh 100vh 50vh 100vh 50vh 100vh 50vh 10vh;
 }
 
 // temporal code
 .landing {
     background-color: gray;
 }
-
-.user-card-2 {
-    background-color: rgb(253, 202, 139);
+textarea{
+    height: 30vh;
+    width: 50vw;
+    border: none;
+    background: transparent;
+    color: black;
+    margin-top: 3vh;
 }
-
-.user-card-3 {
-    background-color: rgb(255, 180, 88);
+.copy-code{
+    justify-self: center;
+    align-self: center;
 }
 
 // G fonts imports
