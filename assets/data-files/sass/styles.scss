@@ -12,26 +12,34 @@ html {
 
 main {
     display: grid;
-    grid-template-rows: repeat(3, 100vh);
+    grid-template-rows: 100vh 100vh 50vh 100vh 50vh 100vh 50vh 10vh;
 }
 
 // temporal code
 .landing {
     background-color: gray;
 }
-
-.user-card-2 {
-    background-color: rgb(253, 202, 139);
+textarea{
+    height: 30vh;
+    width: 50vw;
+    border: none;
+    background: transparent;
+    color: black;
+    margin-top: 3vh;
+}
+.copy-code{
+    justify-self: center;
+    align-self: center;
 }
 
-.user-card-3 {
-    background-color: rgb(255, 180, 88);
-}
+// G fonts imports
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 // modifiers
 :root {
-    --br-images: 50px;
+    --br-images: 100%;
+    --poppinsXlh300:'Poppins', sans-serif;
 }
 
-// imports
+// styles imports
 @import "components/tarjets/_first-tarjet.scss";

@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/data-files/css/custom.css">
+    <!-- scroll trigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="assets/data-files/js/app.js"></script>
     <title>User cards templates</title>
 </head>
 
@@ -17,27 +21,118 @@
         <section class="large-card-clasic">
             <div class="tarjet-container">
                 <img src="assets/media/img/user-1.jpg" alt="" class="br-img">
-                <h2 class="ft-size-3">
-                    Ralph Edwards
-                </h2>
-                <hr class="FirtsTarjet-breakline">
-                <p class="FirstTarjet-description">
-                    Dolor libero nunc eros facilisi. Suspendisse magna fusce faucibus nibh. Eget cursus sapien proin
-                    feugiat sit condimentum morbi aliquam. Convallis integer massa lectus scelerisque nibh etiam. Tellus
-                    est donec vehicula massa turpis eu.
-                    <br><br>
-                    Sed pellentesque quis a consectetur scelerisque. Aliquet duis viverra condimentum scelerisque
-                    sollicitudin nunc urna massa. Egestas porttitor commodo nisl enim varius facilisis consectetur
-                    blandit. A neque in massa ut egestas.
-                </p>
+                <div class="Content-container">
+                    <h2 class="user-name">Emma Edwards</h2>
+                    <hr class="Tarjet-breakline">
+                    <p class="Tarjet-description">
+                        Dolor libero nunc eros facilisi. Suspendisse magna fusce faucibus nibh. Eget cursus sapien proin
+                        feugiat sit condimentum morbi aliquam. Convallis integer massa lectus scelerisque nibh etiam.
+                        Tellus
+                        est donec vehicula massa turpis eu.
+                        <br><br>
+                        Sed pellentesque quis a consectetur scelerisque. Aliquet duis viverra condimentum scelerisque
+                        sollicitudin nunc urna massa. Egestas porttitor commodo nisl enim varius facilisis consectetur
+                        blandit. A neque in massa ut egestas.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section class="user-card-2"></section>
+        <section class="large-card-clasic-code">
+            <div class="html-code">
+                <h2>HTML CODE</h2>
+                <textarea disabled>
+                    <div class="tarjet-container">
+
+                        <img src="assets/media/img/user-1.jpg" alt="" class="br-img">
+
+                        <div class="Content-container">
+
+                            <h2 class="user-name">Emma Edwards</h2>
+
+                            <hr class="Tarjet-breakline">
+
+                            <p class="Tarjet-description">
+                                Dolor libero nunc eros facilisi. Suspendisse magna fusce faucibus nibh. Eget cursus sapien proin
+                                feugiat sit condimentum morbi aliquam. Convallis integer massa lectus scelerisque nibh etiam.
+                                Tellus
+                                est donec vehicula massa turpis eu.
+                                <br><br>
+                                Sed pellentesque quis a consectetur scelerisque. Aliquet duis viverra condimentum scelerisque
+                                sollicitudin nunc urna massa. Egestas porttitor commodo nisl enim varius facilisis consectetur
+                                blandit. A neque in massa ut egestas.
+                            </p>
+
+                        </div>
+
+                    </div>    
+                </textarea>
+                <button class="copy-code">Copy the code</button>
+            </div>
+            
+            <div class="css-code">
+            <h2>CSS CODE</h2>
+                <textarea disabled>
+                    .tarjet-container {
+                        background-color: #bdbdbdde;
+                        width: 85vw;
+                        height: 65vh;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        position: relative;
+                        top: 85vh;
+                        border-radius: 10px;
+                        transition: 0.5s linear;
+                      }
+                      .tarjet-container .br-img {
+                        width: 19vw;
+                        height: 32vh;
+                        border-radius: var(--br-images);
+                        justify-self: center;
+                        align-self: center;
+                      }
+                      .tarjet-container .Content-container {
+                        display: grid;
+                      }
+                      .tarjet-container .Content-container .user-name {
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                        font-size: 3em;
+                        align-self: end;
+                        grid-area: 1/1;
+                      }
+                      .tarjet-container .Content-container .Tarjet-breakline {
+                        align-self: end;
+                        height: 0.3vh;
+                        background-color: white;
+                        border: none;
+                        grid-area: 1/1;
+                        margin-left: 0vw;
+                        margin-top: 6vh;
+                        width: 0vw;
+                        transition: 1s;
+                        margin-bottom: 0vh;
+                      }
+                      .tarjet-container .Content-container .Tarjet-description {
+                        font-size: 1.3em;
+                        text-align: justify;
+                        width: 40vw;
+                        justify-self: start;
+                      }
+                      .tarjet-container:hover {
+                        border-radius: 30px;
+                        background-color: #bdbdbd;
+                      }
+                      .tarjet-container:hover .Tarjet-breakline {
+                        width: 18vw;
+                      }                      
+                </textarea>
+                <button class="copy-code">Copy the code</button>
+            </div>
+        </section>
         <section class="user-card-2"></section>
     </main>
     <footer></footer>
-
 </body>
 
 </html>
