@@ -36,12 +36,13 @@
                     </p>
                 </div>
             </div>
+            <button onclick="DisplayFunction()" > show the code</button>
         </section>
 
-        <section class="large-card-clasic-code">
+        <section class="large-card-clasic-code" id="CodeSection1">
             <div class="html-code">
                 <h2>HTML CODE</h2>
-                <textarea disabled>
+                <textarea disabled id="copyhtml1">
                     <div class="tarjet-container">
 
                         <img src="assets/media/img/user-1.jpg" alt="" class="br-img">
@@ -67,12 +68,12 @@
 
                     </div>    
                 </textarea>
-                <button class="copy-code">Copy the code</button>
+                <button class="copy-code" onclick="copyFunction1()">Copy the code</button>
             </div>
             
             <div class="css-code">
             <h2>CSS CODE</h2>
-                <textarea disabled>
+                <textarea disabled id="copycss1">
                     .tarjet-container {
                         background-color: #bdbdbdde;
                         width: 85vw;
@@ -127,7 +128,7 @@
                         width: 18vw;
                       }                      
                 </textarea>
-                <button class="copy-code">Copy the code</button>
+                <button class="copy-code" onclick="copyFunction2()">Copy the code</button>
             </div>
         </section>
         <section class="user-card-2"></section>
