@@ -75,7 +75,7 @@ textarea {
 }
 
 .tarjet-container {
-  background-color: #bdbdbdde;
+  background-color: rgba(94, 93, 93, 0.781);
   width: 85vw;
   height: 65vh;
   display: grid;
@@ -123,7 +123,7 @@ textarea {
 
 .tarjet-container:hover {
   border-radius: 30px;
-  background-color: #bdbdbd;
+  background-color: #5e5d5d;
 }
 
 .tarjet-container:hover .Tarjet-breakline {

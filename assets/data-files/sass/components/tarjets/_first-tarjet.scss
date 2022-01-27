@@ -23,7 +23,7 @@
 }
 // actual card css styles
 .tarjet-container{
-    background-color: #bdbdbdde;
+    background-color:rgba(94, 93, 93, 0.781);
     width: 85vw;
     height: 65vh;
     display: grid;
@@ -70,7 +70,7 @@
 }
 .tarjet-container:hover{
     border-radius: 30px;
-    background-color: #bdbdbd;
+    background-color: rgb(94, 93, 93);
 }
 .tarjet-container:hover .Tarjet-breakline{
     width: 18vw;
