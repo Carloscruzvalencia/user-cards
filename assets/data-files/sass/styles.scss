@@ -1,5 +1,5 @@
 // web page customization
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none !important;
 }
 
@@ -22,14 +22,34 @@ main {
 textarea{
     height: 30vh;
     width: 50vw;
-    border: none;
     background: transparent;
+    border: none;
     color: black;
     margin-top: 3vh;
+    margin-left: -1vh;
 }
+
 .copy-code{
     justify-self: center;
     align-self: center;
+}
+.show-button{
+    width: 5vw;
+    height: 10vh;
+    border-radius: 100%;
+    border: none;
+    background-color: white;
+    justify-self: center;
+    margin-top: 10vh;
+    animation: pulseEF linear 1.5s infinite reverse;
+}
+@keyframes pulseEF {
+    to{
+        box-shadow:0px 0px 0px 15px white;  
+    }
+}
+.code-title{
+    justify-self: center
 }
 
 // G fonts imports

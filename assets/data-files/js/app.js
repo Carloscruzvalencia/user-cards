@@ -30,8 +30,8 @@ function copyFunction1() {
     copyText.select();
     /* Copy the text inside the text field */
     navigator.clipboard.writeText(copyText.value);
-    /* Alert the copied text */
-    alert("Copied the text:");
+    var tooltip = document.getElementById("myTooltip2");
+    tooltip.innerHTML = "Copied";
 }
 
 function copyFunction2() {
@@ -41,9 +41,10 @@ function copyFunction2() {
     /* Select the text field */
     copyText.select();
     /* Copy the text inside the text field */
-    navigator.clipboard.writeText(copyText.value);
-    /* Alert the copied text */
-    alert("Copied the text:");
+    navigator.clipboard.writeText(copyText.value)
+
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied";
 }
 
 // ======================= display code block sections ========================

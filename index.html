@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/data-files/css/custom.css">
+    <title>User cards templates</title>
+
     <!-- scroll trigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <!-- custom scrip -->
     <script src="assets/data-files/js/app.js"></script>
-    <title>User cards templates</title>
+
 </head>
 
 <body>
@@ -36,12 +39,12 @@
                     </p>
                 </div>
             </div>
-            <button onclick="DisplayFunction()" > show the code</button>
+            <button class="show-button" onclick="DisplayFunction()" > see the code </button>
         </section>
 
         <section class="large-card-clasic-code" id="CodeSection1">
             <div class="html-code">
-                <h2>HTML CODE</h2>
+                <h2 class="code-title">HTML CODE</h2>
                 <textarea disabled id="copyhtml1">
                     <div class="tarjet-container">
 
@@ -68,11 +71,11 @@
 
                     </div>    
                 </textarea>
-                <button class="copy-code" onclick="copyFunction1()">Copy the code</button>
+                <button class="copy-code tooltip" onclick="copyFunction1()" id="myTooltip2" >Copy the code</button>
             </div>
             
             <div class="css-code">
-            <h2>CSS CODE</h2>
+            <h2 class="code-title">CSS CODE</h2>
                 <textarea disabled id="copycss1">
                     .tarjet-container {
                         background-color: #bdbdbdde;
@@ -88,7 +91,7 @@
                       .tarjet-container .br-img {
                         width: 19vw;
                         height: 32vh;
-                        border-radius: var(--br-images);
+                        border-radius: 100%;
                         justify-self: center;
                         align-self: center;
                       }
@@ -128,7 +131,7 @@
                         width: 18vw;
                       }                      
                 </textarea>
-                <button class="copy-code" onclick="copyFunction2()">Copy the code</button>
+                <button class="copy-code tooltip" onclick="copyFunction2()" id="myTooltip">Copy the code</button>
             </div>
         </section>
         <section class="user-card-2"></section>
