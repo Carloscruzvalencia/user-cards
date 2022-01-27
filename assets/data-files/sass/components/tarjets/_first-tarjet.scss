@@ -75,10 +75,12 @@
 .tarjet-container:hover .Tarjet-breakline{
     width: 18vw;
 }
+
 .large-card-clasic-code{
-    background-color: bisque;
-    display: grid;
+    background-color: rgb(255, 255, 255);
+    display: none;
     grid-template-columns: repeat(2,1fr);
+    width: 100vw;
     .html-code{
         display: grid;
         grid-area: 1/1;
