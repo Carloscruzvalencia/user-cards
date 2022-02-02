@@ -8,8 +8,15 @@
   <link rel="stylesheet" href="assets/data-files/css/custom.css">
   <title>User cards templates</title>
 
-  <!-- scroll trigger -->
+  <!-- jquery 3.x-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- lettering.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.js"></script>
+  <!-- textillate.js -->
+  <script src="http://jschr.github.io/textillate/jquery.textillate.js"></script>
+  <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <!-- Scroll Trigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   <!-- custom scrip -->
   <script src="assets/data-files/js/app.js"></script>
@@ -17,16 +24,21 @@
 </head>
 
 <body>
-  <header></header>
+  <header>
+    <div class="hd-text">
+      <a href="https://github.com/Carloscruzvalencia/user-cards">Github repo</a>
+      <a href="https://github.com/Carloscruzvalencia">sobre mi</a>
+    </div>
+  </header>
   <main>
-    
     <button class="unsplash-button"><svg role="img" viewBox="0 0 40 24" xmlns="http://www.w3.org/2000/svg">
-        <title>Unsplash</title>
         <path d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z" />
       </svg><strong>UNSPLASH</strong>
     </button>
 
-    <section class="landing"></section>
+    <section class="landing">
+      <h1 class="tlt">User card templates</h1>
+    </section>
 
     <section class="large-card-clasic">
       <div class="tarjet-container">
