@@ -7,6 +7,17 @@ html {
     body {
         margin: 0;
         overflow-x: hidden;
+        user-select: none;
+    }
+    a{
+        font-size: 1.5em;
+        text-decoration: none;
+        font-family: var(--poppinsXlh300);
+        color: white;
+        padding-left: 2vw;
+    }
+    a:hover{
+        color: gray;
     }
 }
 
@@ -15,10 +26,47 @@ main {
     grid-template-rows: 100vh 100vh 50vh 100vh 50vh 100vh 50vh 10vh;
 }
 
-// temporal code
-.landing {
-    background-color: gray;
+// header
+header{
+    background-color: #161616db;
+    position: absolute;
+    height: 5vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    z-index: 1;
+    .hd-text{
+        align-self: center;
+        justify-self: center;
+        grid-area: 1/3/1/1;
+        margin-right: 5vw;
+    }
 }
+
+
+.landing {
+    display: grid;
+    background-image: url(../../media/img/casey-horner-1sim8ojvCbE-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1{
+        font-size: 7em;
+        justify-self: center;
+        align-self: center;
+        animation: colorfx 5s 1.28s linear infinite;
+        font-family: var(--pacificoxregular);
+    }
+}
+@keyframes colorfx {
+    0%{ color: #81ecec;}
+    25%{ color: #00b894;}
+    50%{ color: #00cec9;}
+    100%{ color: #81ecec ;}
+}
+// =======
+
+// styles for the display code box 
 textarea{
     height: 30vh;
     width: 50vw;
@@ -28,7 +76,7 @@ textarea{
     margin-top: 3vh;
     margin-left: -1vh;
 }
-
+// copy-code button styles 
 .copy-code{
     justify-self: center;
     align-self: center;
@@ -41,6 +89,7 @@ textarea{
     background-color: white;
     justify-self: center;
     margin-top: 10vh;
+    cursor: pointer;
     animation: pulseEF linear 1.5s infinite reverse;
 }
 @keyframes pulseEF {
@@ -51,15 +100,48 @@ textarea{
 .code-title{
     justify-self: center
 }
+// ===============
+// unsplash button styles
+.unsplash-button{
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 15vh;
+    height: 5vh;
+    background-color: white;
+    border: 1px gray solid;
+    border-radius: 10px;
+    justify-self: end;
+    justify-items: center;
+    align-items: center;
+    align-self: end;
+    z-index: 100;
+    margin-right: 2vw;
+    top: 90vh;
+}
+.unsplash-button:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+// CDN
+// animate.css
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
 
 // G fonts imports
+
+// poppins x300
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+//  Pacifico
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 // modifiers
 :root {
     --br-images: 100%;
     --poppinsXlh300:'Poppins', sans-serif;
+    --pacificoxregular:'Pacifico', sans-serif;
 }
 
 // styles imports
-@import "components/tarjets/_first-tarjet.scss";
+@import "components/tarjets/_large-card-classic.scss";
+@import "components/tarjets/_thin-cards";
