@@ -1,4 +1,6 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 body::-webkit-scrollbar {
   display: none !important;
 }
@@ -6,6 +8,17 @@ body::-webkit-scrollbar {
 html body {
   margin: 0;
   overflow-x: hidden;
+  user-select: none;
+}
+html a {
+  font-size: 1.5em;
+  text-decoration: none;
+  font-family: var(--poppinsXlh300);
+  color: white;
+  padding-left: 2vw;
+}
+html a:hover {
+  color: gray;
 }
 
 main {
@@ -13,17 +26,44 @@ main {
   grid-template-rows: 100vh 100vh 50vh 100vh 50vh 100vh 50vh 10vh;
 }
 
+header {
+  background-color: #161616db;
+  position: absolute;
+  height: 5vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  z-index: 1;
+}
+header .hd-text {
+  align-self: center;
+  justify-self: center;
+  grid-area: 1/3/1/1;
+  margin-right: 5vw;
+}
+
 .landing {
-  background-color: gray;
+  display: grid;
+  background-image: url(../../media/img/background/casey-horner-1sim8ojvCbE-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landing h1 {
+  font-size: 7em;
+  justify-self: center;
+  align-self: center;
+  color: white;
+  font-family: var(--pacificoxregular);
 }
 
 textarea {
-  height: 30vh;
+  height: 41vh;
   width: 50vw;
-  background: transparent;
+  background: #2e3440;
   border: none;
-  color: black;
-  margin-top: 3vh;
+  color: white;
+  margin-top: -2vh;
   margin-left: -1vh;
 }
 
@@ -40,25 +80,50 @@ textarea {
   background-color: white;
   justify-self: center;
   margin-top: 10vh;
+  cursor: pointer;
   animation: pulseEF linear 1.5s infinite reverse;
 }
 
 @keyframes pulseEF {
   to {
-    box-shadow: 0px 0px 0px 15px white;
+    box-shadow: 0px 0px 0px 15px #e2e1e1;
   }
 }
 .code-title {
   justify-self: center;
 }
 
+.unsplash-button {
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 15vh;
+  height: 5vh;
+  background-color: white;
+  border: 1px gray solid;
+  border-radius: 10px;
+  justify-self: end;
+  justify-items: center;
+  align-items: center;
+  align-self: end;
+  z-index: 100;
+  margin-right: 2vw;
+  top: 90vh;
+}
+
+.unsplash-button:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
 :root {
   --br-images: 100%;
   --poppinsXlh300:"Poppins", sans-serif;
+  --pacificoxregular:"Pacifico", sans-serif;
 }
 
 .large-card-clasic {
-  background-image: url(../../media/img/img-1.jpg);
+  background-image: url(/assets/media/img/background/img-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -75,7 +140,7 @@ textarea {
 }
 
 .tarjet-container {
-  background-color: #bdbdbdde;
+  background-color: rgba(94, 93, 93, 0.781);
   width: 85vw;
   height: 65vh;
   display: grid;
@@ -87,7 +152,7 @@ textarea {
 }
 .tarjet-container .br-img {
   width: 19vw;
-  height: 32vh;
+  height: 34vh;
   border-radius: var(--br-images);
   justify-self: center;
   align-self: center;
@@ -123,7 +188,7 @@ textarea {
 
 .tarjet-container:hover {
   border-radius: 30px;
-  background-color: #bdbdbd;
+  background-color: #5e5d5d;
 }
 
 .tarjet-container:hover .Tarjet-breakline {
@@ -143,6 +208,34 @@ textarea {
 .large-card-clasic-code .css-code {
   display: grid;
   grid-area: 1/2;
+}
+
+.thin-cards {
+  background-image: url(/assets/media/img/background/thin-cards-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.thin-cards .thin-tarjet-1 {
+  background-color: white;
+  width: 25vw;
+  height: 65vh;
+}
+.thin-cards .thin-tarjet-2 {
+  background-color: white;
+  width: 25vw;
+  height: 65vh;
+}
+.thin-cards .thin-tarjet-3 {
+  background-color: white;
+  width: 25vw;
+  height: 65vh;
 }
 
 /*# sourceMappingURL=custom.css.map */
