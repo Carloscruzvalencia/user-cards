@@ -44,7 +44,7 @@ header .hd-text {
 
 .landing {
   display: grid;
-  background-image: url(../../media/img/casey-horner-1sim8ojvCbE-unsplash.jpg);
+  background-image: url(../../media/img/background/casey-horner-1sim8ojvCbE-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,12 +58,12 @@ header .hd-text {
 }
 
 textarea {
-  height: 30vh;
+  height: 41vh;
   width: 50vw;
-  background: transparent;
+  background: #2e3440;
   border: none;
-  color: black;
-  margin-top: 3vh;
+  color: white;
+  margin-top: -2vh;
   margin-left: -1vh;
 }
 
@@ -86,7 +86,7 @@ textarea {
 
 @keyframes pulseEF {
   to {
-    box-shadow: 0px 0px 0px 15px white;
+    box-shadow: 0px 0px 0px 15px #e2e1e1;
   }
 }
 .code-title {
@@ -123,7 +123,7 @@ textarea {
 }
 
 .large-card-clasic {
-  background-image: url(/assets/media/img/img-1.jpg);
+  background-image: url(/assets/media/img/background/img-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -208,6 +208,34 @@ textarea {
 .large-card-clasic-code .css-code {
   display: grid;
   grid-area: 1/2;
+}
+
+.thin-cards {
+  background-image: url(/assets/media/img/background/thin-cards-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.thin-cards .thin-tarjet-1 {
+  background-color: white;
+  width: 25vw;
+  height: 65vh;
+}
+.thin-cards .thin-tarjet-2 {
+  background-color: white;
+  width: 25vw;
+  height: 65vh;
+}
+.thin-cards .thin-tarjet-3 {
+  background-color: white;
+  width: 25vw;
+  height: 65vh;
 }
 
 /*# sourceMappingURL=custom.css.map */

@@ -46,7 +46,7 @@ header{
 
 .landing {
     display: grid;
-    background-image: url(../../media/img/casey-horner-1sim8ojvCbE-unsplash.jpg);
+    background-image: url(../../media/img/background/casey-horner-1sim8ojvCbE-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,12 +62,12 @@ header{
 
 // styles for the display code box 
 textarea{
-    height: 30vh;
+    height: 41vh;
     width: 50vw;
-    background: transparent;
+    background: #2e3440;
     border: none;
-    color: black;
-    margin-top: 3vh;
+    color: rgb(255, 255, 255);
+    margin-top: -2vh;
     margin-left: -1vh;
 }
 // copy-code button styles 
@@ -88,7 +88,7 @@ textarea{
 }
 @keyframes pulseEF {
     to{
-        box-shadow:0px 0px 0px 15px white;  
+        box-shadow:0px 0px 0px 15px rgb(226, 225, 225);  
     }
 }
 .code-title{
@@ -137,5 +137,5 @@ textarea{
 }
 
 // styles imports
-@import "components/tarjets/_large-card-classic.scss";
-@import "components/tarjets/_thin-cards";
+@import "components/tarjets/large-card-classic";
+@import "components/tarjets/thin-cards";
