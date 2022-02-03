@@ -5,12 +5,19 @@ const vw = (coef) => window.innerWidth * (coef / 100);
 
 // getting error gsap dont find css clases html dom partially loaded 
 document.addEventListener("DOMContentLoaded",
+    // the code below is what u normally do
     function (event) {
-        // the code below is what u normally do
         gsap.registerPlugin(ScrollTrigger);
 
         // object to apply the Animation
         gsap.to(".tarjet-container", {
+            y: vh(-85),
+            duration: 1,
+
+            // object that triggers the animation
+            scrollTrigger: ".large-card-clasic"
+        });
+        gsap.to("", {
             y: vh(-85),
             duration: 1,
 
@@ -51,8 +58,12 @@ function copyFunction2() {
 function DisplayFunction() {
     var x = document.getElementById("CodeSection1");
     if (x.style.display === "grid") {
-      x.style.display = "none";
+        x.style.display = "none";
     } else {
-      x.style.display = "grid";
+        x.style.display = "grid";
     }
-  }
+}
+// ======================== textillate ============================
+$(function () {
+	$('.tlt').textillate();
+})
