@@ -53,24 +53,10 @@ header .hd-text {
   font-size: 7em;
   justify-self: center;
   align-self: center;
-  animation: colorfx 5s 1.28s linear infinite;
+  color: white;
   font-family: var(--pacificoxregular);
 }
 
-@keyframes colorfx {
-  0% {
-    color: #81ecec;
-  }
-  25% {
-    color: #00b894;
-  }
-  50% {
-    color: #00cec9;
-  }
-  100% {
-    color: #81ecec;
-  }
-}
 textarea {
   height: 30vh;
   width: 50vw;
