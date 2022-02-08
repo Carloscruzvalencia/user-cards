@@ -2,7 +2,7 @@
 
 // background set
 .large-card-clasic{
-    background-image: url(/assets/media/img/background/img-1.jpg);
+    background-image: url(../../media/img/img-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23,7 +23,7 @@
 }
 // actual card css styles
 .tarjet-container{
-    background-color:rgba(94, 93, 93, 0.781);
+    background-color: #bdbdbdde;
     width: 85vw;
     height: 65vh;
     display: grid;
@@ -34,7 +34,7 @@
     transition: 0.5s linear;
     .br-img{
         width: 19vw;
-        height: 34vh;
+        height: 32vh;
         border-radius: var(--br-images);
         justify-self: center;
         align-self: center;
@@ -70,7 +70,7 @@
 }
 .tarjet-container:hover{
     border-radius: 30px;
-    background-color: rgb(94, 93, 93);
+    background-color: #bdbdbd;
 }
 .tarjet-container:hover .Tarjet-breakline{
     width: 18vw;

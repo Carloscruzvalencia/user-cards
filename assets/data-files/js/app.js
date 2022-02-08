@@ -17,13 +17,6 @@ document.addEventListener("DOMContentLoaded",
             // object that triggers the animation
             scrollTrigger: ".large-card-clasic"
         });
-        gsap.to("", {
-            y: vh(-85),
-            duration: 1,
-
-            // object that triggers the animation
-            scrollTrigger: ".large-card-clasic"
-        });
     });
 //  ========================= gsap scrollTrigger code ========================
 
@@ -38,7 +31,7 @@ function copyFunction1() {
     /* Copy the text inside the text field */
     navigator.clipboard.writeText(copyText.value);
     var tooltip = document.getElementById("myTooltip2");
-    tooltip.innerHTML = "Copied";
+    tooltip.innerHTML = "Copiado";
 }
 
 function copyFunction2() {
@@ -51,7 +44,7 @@ function copyFunction2() {
     navigator.clipboard.writeText(copyText.value)
 
     var tooltip = document.getElementById("myTooltip");
-    tooltip.innerHTML = "Copied";
+    tooltip.innerHTML = "Copiado";
 }
 
 // ======================= display code block sections ========================
@@ -63,7 +56,15 @@ function DisplayFunction() {
         x.style.display = "grid";
     }
 }
+
 // ======================== textillate ============================
 $(function () {
-	$('.tlt').textillate();
-})
+    $('h1').textillate({ in : {
+            effect: 'fadeInLeftBig'
+        },
+        out: {
+            effect: 'hinge'
+        },
+        loop: true
+    });
+});

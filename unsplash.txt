@@ -1,3 +1,6 @@
+
+!!!!!!!! CREARE UNA PAGINA DONDE PONDRE LAS IMAGENES I LOS CREADDORES DE CADA IMAGEN !!!!!
+
 landing photo
 Photo by <a href="https://unsplash.com/@mischievous_penguins?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Casey Horner</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
@@ -7,5 +10,18 @@ user- -1 background photo
 user -1 photo
 Photo by <a href="https://unsplash.com/@jurigianfra?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Juri Gianfrancesco</a> on <a href="https://unsplash.com/s/photos/portrait?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
+background photo thin cadrs
+Photo by <a href="https://unsplash.com/@firosnv?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Firos nv</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+user cards 1
+Photo by <a href="https://unsplash.com/@phlmrtn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Philip Martin</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 
+user cards 2
+Photo by <a href="https://unsplash.com/@aiony?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aiony Haust</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
+user cards 3
+Photo by <a href="https://unsplash.com/@brokenlenscap?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ben Parker</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 
