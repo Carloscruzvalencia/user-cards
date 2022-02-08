@@ -56,6 +56,7 @@ function DisplayFunction() {
         x.style.display = "grid";
     }
 }
+
 // ======================== textillate ============================
 $(function () {
     $('h1').textillate({ in : {
