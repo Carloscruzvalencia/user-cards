@@ -1,0 +1,22 @@
+// unsplash button styles
+.unsplash-button{
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 15vh;
+    height: 5vh;
+    background-color: white;
+    border: 1px gray solid;
+    border-radius: 10px;
+    justify-self: end;
+    justify-items: center;
+    align-items: center;
+    align-self: end;
+    z-index: 100;
+    margin-right: 2vw;
+    top: 90vh;
+}
+.unsplash-button:hover{
+    background-color: gray;
+    cursor: pointer;
+}
