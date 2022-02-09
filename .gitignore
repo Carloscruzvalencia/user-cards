@@ -3,3 +3,4 @@
 *.sass.map
 *.scss.map
 /assets/data-files/sass
+*.scss
