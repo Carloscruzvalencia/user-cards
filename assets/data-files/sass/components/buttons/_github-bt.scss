@@ -1,0 +1,28 @@
+.github-link{
+    position: fixed;
+    width: 0.7vw;
+    height: 6vh;
+    top: 89.5vh;
+    left: 86vw;
+    border-radius: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    .gth-bt{
+        border-radius: 100%;
+        border: none;
+        width: 2.7vw;
+        height: 5vh;
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        .gth-svg{
+            width: 5.6vw;
+        }
+    }
+    .gth-bt:hover{
+        fill: white;
+        background-color: black;
+        
+    }
+}

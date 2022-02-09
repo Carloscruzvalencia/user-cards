@@ -1,0 +1,55 @@
+// web page customization
+body::-webkit-scrollbar {
+    display: none !important;
+}
+html {
+    body {
+        margin: 0;
+        overflow-x: hidden;
+        user-select: none;
+    }
+    a{
+        font-size: 1.5em;
+        text-decoration: none;
+        font-family: var(--poppinsXlh300);
+        color: white;
+        padding-left: 2vw;
+    }
+    a:hover{
+        color: gray;
+    }
+    main {
+        display: grid;
+        grid-template-rows: 100vh 100vh 50vh 100vh 50vh 100vh 50vh 10vh;
+    }
+}
+// ===============================
+// G fonts imports
+// poppins x300
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+//  Pacifico
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+// modifiers
+:root {
+    
+    --br-images: 100%;
+    --poppinsXlh300:'Poppins', sans-serif;
+    --pacificoxregular:'Pacifico', sans-serif;
+}
+// styles imports
+
+// Areas
+@import "components/ES-Areas/menu";
+@import "components/ES-Areas/landing";
+@import "components/ES-Areas/copy-area";
+
+// Buttons
+@import "components/ES-Areas/buttons.scss";
+@import "components/buttons/unsplash-bt";
+@import "components/buttons/copy-bt";
+@import "components/buttons/github-bt";
+
+// Cards
+@import "components/tarjets/large-card-classic";
+@import "components/tarjets/thin-cards";
