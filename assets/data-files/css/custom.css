@@ -1,4 +1,3 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 body::-webkit-scrollbar {
@@ -20,10 +19,15 @@ html a {
 html a:hover {
   color: gray;
 }
-
-main {
+html main {
   display: grid;
   grid-template-rows: 100vh 100vh 50vh 100vh 50vh 100vh 50vh 10vh;
+}
+
+:root {
+  --br-images: 100%;
+  --poppinsXlh300:"Poppins", sans-serif;
+  --pacificoxregular:"Pacifico", sans-serif;
 }
 
 header {
@@ -55,8 +59,24 @@ header .hd-text {
   align-self: center;
   color: white;
   font-family: var(--pacificoxregular);
+  grid-area: 1/1;
+}
+.landing .tl-line {
+  height: 0.3vh;
+  width: 0vw;
+  background-color: white;
+  grid-area: 1/1;
+  justify-self: center;
+  align-self: center;
+  margin-top: 13vh;
+  animation: hr-sz linear 2s forwards;
 }
 
+@keyframes hr-sz {
+  to {
+    width: 49vw;
+  }
+}
 textarea {
   height: 41vh;
   width: 50vw;
@@ -70,6 +90,35 @@ textarea {
 .copy-code {
   justify-self: center;
   align-self: center;
+}
+
+.code-title {
+  justify-self: center;
+}
+
+.unsplash-link {
+  position: fixed;
+  top: 90vh;
+  left: 89vw;
+}
+.unsplash-link .unsplash-button {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 15vh;
+  height: 5vh;
+  background-color: white;
+  border: 1px gray solid;
+  border-radius: 10px;
+  justify-self: end;
+  justify-items: center;
+  align-items: center;
+  align-self: end;
+  z-index: 100;
+  margin-right: 2vw;
+}
+.unsplash-link .unsplash-button:hover {
+  background-color: gray;
+  cursor: pointer;
 }
 
 .show-button {
@@ -89,37 +138,32 @@ textarea {
     box-shadow: 0px 0px 0px 15px #e2e1e1;
   }
 }
-.code-title {
-  justify-self: center;
-}
-
-.unsplash-button {
+.github-link {
   position: fixed;
+  width: 0.7vw;
+  height: 6vh;
+  top: 89.5vh;
+  left: 86vw;
+  border-radius: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 15vh;
+  justify-content: center;
+  align-content: center;
+}
+.github-link .gth-bt {
+  border-radius: 100%;
+  border: none;
+  width: 2.7vw;
   height: 5vh;
-  background-color: white;
-  border: 1px gray solid;
-  border-radius: 10px;
-  justify-self: end;
   justify-items: center;
   align-items: center;
-  align-self: end;
-  z-index: 100;
-  margin-right: 2vw;
-  top: 90vh;
+  display: grid;
 }
-
-.unsplash-button:hover {
-  background-color: gray;
-  cursor: pointer;
+.github-link .gth-bt .gth-svg {
+  width: 5.6vw;
 }
-
-:root {
-  --br-images: 100%;
-  --poppinsXlh300:"Poppins", sans-serif;
-  --pacificoxregular:"Pacifico", sans-serif;
+.github-link .gth-bt:hover {
+  fill: white;
+  background-color: black;
 }
 
 .large-card-clasic {

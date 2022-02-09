@@ -1,0 +1,16 @@
+.show-button{
+    width: 5vw;
+    height: 10vh;
+    border-radius: 100%;
+    border: none;
+    background-color: white;
+    justify-self: center;
+    margin-top: 10vh;
+    cursor: pointer;
+    animation: pulseEF linear 1.5s infinite reverse;
+}
+@keyframes pulseEF {
+    to{
+        box-shadow:0px 0px 0px 15px rgb(226, 225, 225);  
+    }
+}

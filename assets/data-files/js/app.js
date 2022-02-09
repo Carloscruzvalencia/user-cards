@@ -60,11 +60,11 @@ function DisplayFunction() {
 // ======================== textillate ============================
 $(function () {
     $('h1').textillate({ in : {
-            effect: 'fadeInLeftBig'
+            effect: 'fadeInDownBig'
         },
         out: {
-            effect: 'hinge'
+            effect: 'none'
         },
-        loop: true
+        loop: false
     });
 });
