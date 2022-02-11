@@ -93,10 +93,10 @@ textarea {
   height: 41vh;
   width: 50vw;
   background: #2e3440;
-  border: none;
   color: white;
   margin-top: -2vh;
   margin-left: -1vh;
+  border-left: 2px solid white !important;
 }
 
 .copy-code {

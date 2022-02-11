@@ -2,10 +2,10 @@ textarea{
     height: 41vh;
     width: 50vw;
     background: #2e3440;
-    border: none;
     color: rgb(255, 255, 255);
     margin-top: -2vh;
     margin-left: -1vh;
+    border-left: 2px solid rgb(255, 255, 255) !important;
 }
 // copy-code button styles 
 .copy-code{
