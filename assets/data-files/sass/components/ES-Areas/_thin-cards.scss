@@ -9,11 +9,7 @@
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
     align-items: center;
-    .thin-tarjet-1{
-        background-color: rgb(255, 255, 255);
-        width: 25vw;
-        height: 65vh;
-    }
+    overflow: hidden;
     .thin-tarjet-2{
         background-color: rgb(255, 255, 255);
         width: 25vw;
@@ -23,5 +19,22 @@
         background-color: rgb(255, 255, 255);
         width: 25vw;
         height: 65vh;
+    }
+}
+#th-1-an{
+    position: relative;
+    top: 100vh;
+    transition: 1s;
+}
+.thin-buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100vw;
+    height: 13vh;
+    position: absolute;
+    justify-self: center;
+    align-self: end;
+    .th-btt{
+        margin: 0;
     }
 }

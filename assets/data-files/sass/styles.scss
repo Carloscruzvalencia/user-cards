@@ -1,4 +1,8 @@
 // web page customization
+*{
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+}
 body::-webkit-scrollbar {
     display: none !important;
 }
@@ -20,7 +24,6 @@ html {
     }
     main {
         display: grid;
-        grid-template-rows: 100vh 100vh 50vh 100vh 50vh 100vh 50vh 10vh;
     }
 }
 // ===============================
@@ -43,7 +46,9 @@ html {
 @import "components/ES-Areas/buttons.scss";
 @import "components/ES-Areas/menu";
 @import "components/ES-Areas/landing";
+@import "components/ES-Areas/classic-tarjet";
 @import "components/ES-Areas/copy-area";
+@import "components/ES-Areas/thin-cards";
 
 // Buttons
 @import "components/ES-Areas/buttons.scss";
@@ -53,4 +58,7 @@ html {
 
 // Cards
 @import "components/tarjets/large-card-classic";
-@import "components/tarjets/thin-cards";
+
+@import "components/tarjets/thintarjet-1";
+@import "components/tarjets/thintarjet-2";
+@import "components/tarjets/thintarjet-3";
