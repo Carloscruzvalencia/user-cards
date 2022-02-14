@@ -1,0 +1,16 @@
+.large-card-clasic{
+    background-image: url(/assets/media/img/background/img-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    // appear effect
+    overflow: hidden;
+
+    // grid clases
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    margin-top: -0.2vh;
+}

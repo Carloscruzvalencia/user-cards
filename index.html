@@ -31,21 +31,25 @@
     </div>
   </header>
   <main>
+
     <section class="bt-section">
+
       <a href="assets/pages/unsplash.html" class="unsplash-link">
-        <button class="unsplash-button"><svg role="img" viewBox="0 0 40 24" xmlns="http://www.w3.org/2000/svg">
+        <button class="unsplash-button"><svg class="unsplash-svg" role="img" viewBox="0 0 40 24"
+            xmlns="http://www.w3.org/2000/svg">
             <title>Unsplash</title>
             <path d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z" />
-          </svg><strong>UNSPLASH</strong>
+          </svg><strong class="bt-text">UNSPLASH</strong>
         </button>
       </a>
+
       <a href="https://github.com/Carloscruzvalencia/user-cards" target="_blank" rel="external" class="github-link">
         <button class="gth-bt">
-          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg class="gth-svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>GitHub</title>
-            <path class="gth-svg"
+            <path
               d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-          </svg>
+          </svg> <strong class="bt-text">GITHUB</strong>
         </button>
       </a>
     </section>
@@ -61,8 +65,10 @@
       <div class="tarjet-container">
         <img src="assets/media/img/user-images/user-1.jpg" alt="" class="br-img">
         <div class="Content-container">
-          <h2 class="user-name">Emma Edwards</h2>
-          <hr class="Tarjet-breakline">
+          <div class="clasic-tj-tl">
+            <h2 class="user-name">Emma Edwards</h2>
+            <hr class="Tarjet-breakline">
+          </div>
           <p class="Tarjet-description">
             Dolor libero nunc eros facilisi. Suspendisse magna fusce faucibus nibh. Eget cursus sapien proin
             feugiat sit condimentum morbi aliquam. Convallis integer massa lectus scelerisque nibh etiam.
@@ -113,80 +119,389 @@
       <div class="css-code">
         <h2 class="code-title">Codigo CSS</h2>
         <textarea disabled id="copycss1">
-                    .tarjet-container {
-                        background-color:rgba(94, 93, 93, 0.781);
-                        width: 85vw;
-                        height: 65vh;
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        position: relative;
-                        top: 85vh;
-                        border-radius: 10px;
-                        transition: 0.5s linear;
-                      }
-                      .tarjet-container .br-img {
-                        width: 19vw;
-                        height: 32vh;
-                        border-radius: 100%;
-                        justify-self: center;
-                        align-self: center;
-                      }
-                      .tarjet-container .Content-container {
-                        display: grid;
-                      }
-                      .tarjet-container .Content-container .user-name {
-                        margin-block-start: 0;
-                        margin-block-end: 0;
-                        font-size: 3em;
-                        align-self: end;
-                        grid-area: 1/1;
-                      }
-                      .tarjet-container .Content-container .Tarjet-breakline {
-                        align-self: end;
-                        height: 0.3vh;
-                        background-color: white;
-                        border: none;
-                        grid-area: 1/1;
-                        margin-left: 0vw;
-                        margin-top: 6vh;
-                        width: 0vw;
-                        transition: 1s;
-                        margin-bottom: 0vh;
-                      }
-                      .tarjet-container .Content-container .Tarjet-description {
-                        font-size: 1.3em;
-                        text-align: justify;
-                        width: 40vw;
-                        justify-self: start;
-                      }
-                      .tarjet-container:hover {
-                        border-radius: 30px;
-                        background-color: rgb(94, 93, 93);
-                      }
-                      .tarjet-container:hover .Tarjet-breakline {
-                        width: 18vw;
-                      }                      
+          .tarjet-container {
+            background-color: rgba(165, 165, 165, 0.781);
+            width: 85vw;
+            height: 65vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            position: relative;
+            top: 85vh;
+            border-radius: 10px;
+            transition: 0.5s linear;
+          }
+          .tarjet-container .br-img {
+            width: 19vw;
+            height: 34vh;
+            border-radius: var(--br-images);
+            justify-self: center;
+            align-self: center;
+            transition: 0.5s linear;
+          }
+          .tarjet-container .Content-container {
+            display: grid;
+          }
+          .tarjet-container .Content-container .user-name {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            font-size: 3em;
+            align-self: end;
+            grid-area: 1/1;
+          }
+          .tarjet-container .Content-container .Tarjet-breakline {
+            align-self: end;
+            height: 0.3vh;
+            background-color: white;
+            border: none;
+            grid-area: 1/1;
+            margin-left: 0vw;
+            margin-top: 6vh;
+            width: 0vw;
+            transition: 1s;
+            margin-bottom: 0vh;
+          }
+          .tarjet-container .Content-container .Tarjet-description {
+            font-size: 1.3em;
+            text-align: justify;
+            width: 40vw;
+            justify-self: start;
+          }
+          
+          .tarjet-container:hover {
+            border-radius: 30px;
+            background-color: #eeeded;
+          }
+          
+          .tarjet-container:hover .Tarjet-breakline {
+            width: 18vw;
+          }
+          
+          .tarjet-container:hover .br-img {
+            border-radius: 50px;
+          }                    
                 </textarea>
         <button class="copy-code tooltip" onclick="copyFunction2()" id="myTooltip">Copia el codigo</button>
       </div>
     </section>
 
     <section class="thin-cards">
-      <div class="thin-tarjet-1">
-
+      <div class="thin-tarjet-1" id="th-1-an">
+        <img class="thintarjet1-img" src="assets/media/img/user-images/user-2.jpg" alt="">
+        <div class="thintarjet-tl-sc">
+          <h2 class="thintarjet-title">Jacob Blade</h2>
+          <hr class="thintarjet-hr">
+        </div>
+        <p class="thintarjet-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus similique mollitia
+          eos ipsam aut magnam
+          quisquam vitae cum, eveniet consequatur. Accusamus assumenda ipsum sit natus tempore voluptate quos dolorum
+          laboriosam.</p>
       </div>
 
-      <div class="thin-tarjet-2">
-
+      <div class="thin-tarjet-2" id="th-1-an">
+        <div class="thintarjet2-title-sc">
+          <img class="thintarjet2-img" src="assets/media/img/user-images/user-3.jpg" alt="">
+          <h2 class="thintarjet-title">Bonnie Rogers</h2>
+        </div>
+        <div class="thintarjet2-description">
+          <h2 class="thintarjet-title2">Bonnie Rogers</h2>
+          <p class="thintarjet2-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sed obcaecati corrupti voluptate. Delectus
+            harum error, repellendus amet laboriosam nihil! Deserunt tempora hic molestias eos corporis voluptatum! <br>
+            <br>
+            Assumenda, similique nobis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates praesentium
+            quaerat vel ad illo tempora, inventore dolore sunt fugit cupiditate consequatur sequi eveniet perspiciatis
+            architecto cumque molestiae adipisci delectus! Culpa?
+          </p>
+        </div>
       </div>
 
-      <div class="thin-tarjet-3">
+      <div class="thin-tarjet-3" id="th-1-an">
+        <div class="thintarjet3-title-sc">
+          <img class="thintarjet3-img" src="assets/media/img/user-images/user-4.jpg" alt="">
+          <h2 class="thintarjet-title">Samuel wright</h2>
+        </div>
+        <div class="thintarjet3-description">
+          <h2 class="thintarjet-title3">Samuel wright</h2>
+          <p class="thintarjet3-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sed obcaecati corrupti voluptate. Delectus
+            harum error, repellendus amet laboriosam nihil! Deserunt tempora hic molestias eos corporis voluptatum! <br>
+            <br>
+            Assumenda, similique nobis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates praesentium
+            quaerat vel ad illo tempora, inventore dolore sunt fugit cupiditate consequatur sequi eveniet perspiciatis
+            architecto cumque molestiae adipisci delectus! Culpa?
+          </p>
+        </div>
+      </div>
 
+      <div class="thin-buttons">
+        <button class="show-button th-btt" onclick="DisplayFunction2()"> <strong> ver el codigo </strong></button>
+        <button class="show-button th-btt" onclick="DisplayFunction3()"> <strong> ver el codigo </strong></button>
+        <button class="show-button th-btt" onclick="DisplayFunction4()"> <strong> ver el codigo </strong></button>
+      </div>
+
+    </section>
+
+    <section class="thin-cards-code">
+      <div id="CodeSection2">
+        <div class="thincard-code1">
+          <h2>CODIGO HTML -1</h2>
+          <textarea name="" id="copyhtml2" disabled>
+          <div class="thin-tarjet-1" >
+            <img class="thintarjet1-img" src="assets/media/img/user-images/user-2.jpg" alt="">
+            <div class="thintarjet-tl-sc">
+              <h2 class="thintarjet-title">Jacob Blade</h2>
+              <hr class="thintarjet-hr">
+            </div>
+            <p class="thintarjet-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus similique mollitia
+              eos ipsam aut magnam
+              quisquam vitae cum, eveniet consequatur. Accusamus assumenda ipsum sit natus tempore voluptate quos dolorum
+              laboriosam.</p>
+          </div>
+        </textarea>
+        <button class="copy-code tooltip" onclick="copyFunction3()" id="myTooltip3">Copia el codigo</button>
+        </div>
+        <div class="thincard-code1">
+          <h2>CODIGO CSS -1</h2>
+          <textarea name="" id="copycss2" disabled>
+            .thin-tarjet-1 {
+              background-color: white;
+              width: 25vw;
+              height: 65vh;
+              display: grid;
+              justify-items: center;
+              align-items: center;
+            }
+            .thin-tarjet-1 .thintarjet1-img {
+              width: 25vw;
+              height: 38vh;
+              align-self: start;
+              transition: 0.2s linear;
+            }
+            .thin-tarjet-1 .thintarjet-tl-sc {
+              margin-top: -12vh;
+            }
+            .thin-tarjet-1 .thintarjet-title {
+              font-size: 1.6vw;
+            }
+            .thin-tarjet-1 .thintarjet-hr {
+              width: 100%;
+              height: 0.4vh;
+              background-color: gray;
+            }
+            .thin-tarjet-1 .thintarjet-text {
+              font-size: 1.1vw;
+              width: 21vw;
+              text-align: justify;
+              margin-top: -10vh;
+            }
+            
+            .thin-tarjet-1:hover {
+              border-radius: 10px;
+            }
+            
+            .thin-tarjet-1:hover .thintarjet1-img {
+              border-radius: 10px 10px 0px 0px;
+            }
+          </textarea>
+          <button class="copy-code tooltip" onclick="copyFunction4()" id="myTooltip4">Copia el codigo</button>
+        </div>
+      </div>
+
+      <div id="CodeSection3">
+        <div class="thincard-code2">
+          <h2>CODIGO HTML -2</h2>
+          <textarea name="" id="copyhtml3" disabled>
+          <div class="thin-tarjet-2" >
+            <div class="thintarjet2-title-sc">
+              <img class="thintarjet2-img" src="assets/media/img/user-images/user-3.jpg" alt="">
+              <h2 class="thintarjet-title">Bonnie Rogers</h2>
+            </div>
+            <div class="thintarjet2-description">
+              <h2 class="thintarjet-title2">Bonnie Rogers</h2>
+              <p class="thintarjet2-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sed obcaecati corrupti voluptate. Delectus
+                harum error, repellendus amet laboriosam nihil! Deserunt tempora hic molestias eos corporis voluptatum! <br>
+                <br>
+                Assumenda, similique nobis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates praesentium
+                quaerat vel ad illo tempora, inventore dolore sunt fugit cupiditate consequatur sequi eveniet perspiciatis
+                architecto cumque molestiae adipisci delectus! Culpa?
+              </p>
+            </div>
+          </div>
+        </textarea>
+        <button class="copy-code tooltip" onclick="copyFunction5()" id="myTooltip5">Copia el codigo</button>
+        </div>
+        <div class="thincard-code2">
+          <h2>CODIGO CSS -2</h2>
+          <textarea name="" id="copycss3" disabled>
+            .thin-tarjet-2 {
+              display: grid;
+              overflow: hidden;
+            }
+            .thin-tarjet-2 .thintarjet2-title-sc {
+              display: grid;
+              position: relative;
+              width: 100%;
+            }
+            .thin-tarjet-2 .thintarjet2-title-sc .thintarjet2-img {
+              position: absolute;
+              width: 13vw;
+              height: 21vh;
+              top: 10vh;
+              border-radius: 100%;
+              justify-self: center;
+              transition: 0.5s linear;
+            }
+            .thin-tarjet-2 .thintarjet2-title-sc .thintarjet-title {
+              position: absolute;
+              font-size: 1.6vw;
+              top: 45vh;
+              justify-self: center;
+              transition: 0.5s linear;
+            }
+            .thin-tarjet-2 .thintarjet2-description {
+              position: absolute;
+              display: grid;
+              align-items: center;
+              justify-items: center;
+              height: 65%;
+              width: 25vw;
+            }
+            .thin-tarjet-2 .thintarjet2-description .thintarjet-title2 {
+              opacity: 0;
+              font-size: 1.5vw;
+              transition: 0.5s linear;
+              padding-top: 10vh;
+            }
+            .thin-tarjet-2 .thintarjet2-description .thintarjet2-text {
+              opacity: 0;
+              width: 24vw;
+              text-align: justify;
+              justify-self: center;
+              align-self: center;
+              margin-top: -14vh;
+              font-size: 1.1vw;
+              transition: 0.5s linear;
+              padding-top: 25vh;
+            }
+            
+            .thin-tarjet-2:hover .thintarjet2-img {
+              top: -30vh;
+            }
+            
+            .thin-tarjet-2:hover .thintarjet-title {
+              top: 80vh;
+            }
+            
+            .thin-tarjet-2:hover .thintarjet2-text {
+              opacity: 1;
+            }
+            
+            .thin-tarjet-2:hover .thintarjet-title2 {
+              opacity: 1;
+            }
+          </textarea>
+          <button class="copy-code tooltip" onclick="copyFunction6()" id="myTooltip6">Copia el codigo</button>
+        </div>
+      </div>
+
+      <div id="CodeSection4">
+        <div class="thincard-code3">
+          <h2>CODIGO HTML -3</h2>
+          <textarea name="" id="copyhtml4" disabled>
+          <div class="thin-tarjet-3">
+            <div class="thintarjet3-title-sc">
+              <img class="thintarjet3-img" src="assets/media/img/user-images/user-4.jpg" alt="">
+              <h2 class="thintarjet-title">Samuel wright</h2>
+            </div>
+            <div class="thintarjet3-description">
+              <h2 class="thintarjet-title3">Samuel wright</h2>
+              <p class="thintarjet3-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sed obcaecati corrupti voluptate. Delectus
+                harum error, repellendus amet laboriosam nihil! Deserunt tempora hic molestias eos corporis voluptatum! <br> <br>
+                Assumenda, similique nobis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates praesentium quaerat vel ad illo tempora, inventore dolore sunt fugit cupiditate consequatur sequi eveniet perspiciatis architecto cumque molestiae adipisci delectus! Culpa?
+              </p>
+            </div>
+          </div>
+        </textarea>
+        <button class="copy-code tooltip" onclick="copyFunction7()" id="myTooltip7">Copia el codigo</button>
+        </div>
+        <div class="thincard-code3">
+          <h2>CODIGO CSS -3</h2>
+          <textarea name="" id="copycss4" disabled>
+            .thin-tarjet-3 {
+              display: grid;
+              overflow: hidden;
+            }
+            .thin-tarjet-3 .thintarjet3-title-sc {
+              display: grid;
+              position: relative;
+              width: 100%;
+            }
+            .thin-tarjet-3 .thintarjet3-title-sc .thintarjet3-img {
+              position: absolute;
+              width: 13vw;
+              height: 21vh;
+              top: 10vh;
+              border-radius: 100%;
+              justify-self: center;
+              transition: 0.5s linear;
+              transform: scale(1);
+            }
+            .thin-tarjet-3 .thintarjet3-title-sc .thintarjet-title {
+              position: absolute;
+              font-size: 1.6vw;
+              top: 45vh;
+              justify-self: center;
+              transition: 0.5s linear;
+            }
+            .thin-tarjet-3 .thintarjet3-description {
+              position: absolute;
+              display: grid;
+              align-items: center;
+              justify-items: center;
+              height: 65%;
+              width: 25vw;
+            }
+            .thin-tarjet-3 .thintarjet3-description .thintarjet-title3 {
+              opacity: 0;
+              font-size: 1.5vw;
+              transition: 0.5s linear;
+              padding-top: 10vh;
+            }
+            .thin-tarjet-3 .thintarjet3-description .thintarjet3-text {
+              opacity: 0;
+              width: 24vw;
+              text-align: justify;
+              justify-self: center;
+              align-self: center;
+              margin-top: -14vh;
+              font-size: 1.1vw;
+              transition: 0.5s linear;
+              padding-top: 25vh;
+            }
+            
+            .thin-tarjet-3:hover .thintarjet3-img {
+              transform: scale(8);
+              opacity: 0;
+            }
+            
+            .thin-tarjet-3:hover .thintarjet-title {
+              top: 80vh;
+            }
+            
+            .thin-tarjet-3:hover .thintarjet3-text {
+              opacity: 1;
+            }
+            
+            .thin-tarjet-3:hover .thintarjet-title3 {
+              opacity: 1;
+            }
+          </textarea>
+          <button class="copy-code tooltip" onclick="copyFunction8()" id="myTooltip8">Copia el codigo</button>
+        </div>
       </div>
     </section>
-    <section class="thin-cards-code"></section>
-
-
   </main>
   <footer></footer>
 </body>

@@ -1,0 +1,64 @@
+.thin-tarjet-3{
+    display: grid;
+    overflow: hidden;
+    .thintarjet3-title-sc{
+        display: grid;
+        position: relative;
+        width: 100%;
+        .thintarjet3-img{
+            position: absolute;
+            width: 13vw;
+            height: 21vh;
+            top: 10vh;
+            border-radius: 100%;
+            justify-self: center;
+            transition: 0.5s linear;
+            transform: scale(1);
+        }
+        .thintarjet-title{
+            position: absolute;
+            font-size: 1.6vw;
+            top: 45vh;
+            justify-self: center;
+            transition: 0.5s linear;
+        }
+    }
+    .thintarjet3-description{
+        position: absolute;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        height: 65%;
+        width: 25vw;
+        .thintarjet-title3{
+            opacity: 0;
+            font-size: 1.5vw;
+            transition: 0.5s linear;
+            padding-top: 10vh;
+        }
+        .thintarjet3-text{
+            opacity: 0;
+            width: 24vw;
+            text-align: justify;
+            justify-self: center;
+            align-self: center;
+            margin-top: -14vh;
+            font-size: 1.1vw;
+            transition: 0.5s linear;
+            padding-top: 25vh;
+        }
+    }
+}
+.thin-tarjet-3:hover .thintarjet3-img{
+    transform: scale(8);
+    opacity: 0;
+}
+.thin-tarjet-3:hover .thintarjet-title{
+    top: 80vh;
+}
+.thin-tarjet-3:hover .thintarjet3-text {
+    opacity: 1;
+}
+.thin-tarjet-3:hover .thintarjet-title3 {
+    opacity: 1;
+}
