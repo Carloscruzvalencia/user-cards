@@ -1,0 +1,12 @@
+.bt-section{
+    position: fixed;
+    z-index: 1;
+    top: 90vh;
+    left: 88vw;
+    display: grid;
+    width: 10vh;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+}

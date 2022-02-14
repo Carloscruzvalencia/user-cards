@@ -1,0 +1,32 @@
+.landing {
+    display: grid;
+    background-image: url(../../media/img/background/casey-horner-1sim8ojvCbE-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    h1{
+        font-size: 7em;
+        justify-self: center;
+        align-self: center;
+        color: white;
+        font-family: var(--pacificoxregular);
+        grid-area: 1/1;
+    }
+    .tl-line{
+        height: 0.3vh;
+        width: 0vw;
+        background-color: white;
+        grid-area: 1/1;
+        justify-self: center;
+        align-self: center;
+        margin-top: 13vh;
+        animation: hr-sz linear 2s forwards;
+    }
+}
+@keyframes hr-sz {
+    to{
+        width: 49vw;
+    }    
+}
