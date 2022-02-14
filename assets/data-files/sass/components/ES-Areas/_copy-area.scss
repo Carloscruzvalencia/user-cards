@@ -1,4 +1,4 @@
-textarea{
+textarea {
     height: 41vh;
     width: 50vw;
     background: #2e3440;
@@ -7,11 +7,90 @@ textarea{
     margin-top: -2vh;
     margin-left: -1vh;
 }
-// copy-code button styles 
-.copy-code{
-    justify-self: center;
-    align-self: center;
+
+.large-card-clasic-code {
+    background-color: rgb(255, 255, 255);
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+    height: 52vh;
+
+    .html-code {
+        display: grid;
+        grid-area: 1/1;
+        margin-top: 1vh;
+    }
+
+    .css-code {
+        display: grid;
+        grid-area: 1/2;
+        margin-top: 1vh;
+    }
 }
-.code-title{
-    justify-self: center
+
+.thin-cards-code {
+    display: grid;
+
+    #CodeSection2 {
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 47vh 4vh;
+
+        .thincard-code1 {
+            display: grid;
+            grid-template-rows: 7vh 40vh;
+            justify-items: center;
+            align-items: center;
+
+            h2 {
+                margin-bottom: 1vh;
+            }
+        }
+
+        button {
+            margin-top: 1vh;
+        }
+    }
+
+    #CodeSection3 {
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 47vh 4vh;
+
+        .thincard-code2 {
+            display: grid;
+            grid-template-rows: 7vh 40vh;
+            justify-items: center;
+            align-items: center;
+
+            h2 {
+                margin-bottom: 1vh;
+            }
+        }
+
+        button {
+            margin-top: 1vh;
+        }
+    }
+
+    #CodeSection4 {
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 47vh 5vh;
+
+        .thincard-code3 {
+            display: grid;
+            grid-template-rows: 7vh 40vh;
+            justify-items: center;
+            align-items: center;
+
+            h2 {
+                margin-bottom: 1vh;
+            }
+        }
+
+        button {
+            margin-top: 1vh;
+        }
+    }
 }
