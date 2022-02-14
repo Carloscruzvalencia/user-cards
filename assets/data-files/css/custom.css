@@ -193,7 +193,7 @@ textarea {
 }
 
 .thin-cards {
-  background-image: url(/assets/media/img/background/thin-cards-background.jpg);
+  background-image: url(../../../../media/img/background/thin-cards-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
