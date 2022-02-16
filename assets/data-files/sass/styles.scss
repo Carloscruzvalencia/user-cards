@@ -11,6 +11,11 @@ html {
         margin: 0;
         overflow-x: hidden;
         user-select: none;
+        background-image: url(../../media/img/background/background.jfif);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     a{
         font-size: 1.5em;
@@ -24,6 +29,7 @@ html {
     }
     main {
         display: grid;
+
     }
 }
 // ===============================
@@ -47,6 +53,7 @@ html {
 @import "components/ES-Areas/menu";
 @import "components/ES-Areas/landing";
 @import "components/ES-Areas/classic-tarjet";
+@import "components/ES-Areas/biganimatedcard";
 @import "components/ES-Areas/copy-area";
 @import "components/ES-Areas/thin-cards";
 
@@ -58,7 +65,7 @@ html {
 
 // Cards
 @import "components/tarjets/large-card-classic";
-
+@import "components/tarjets/large-animated-card";
 @import "components/tarjets/thintarjet-1";
 @import "components/tarjets/thintarjet-2";
 @import "components/tarjets/thintarjet-3";
