@@ -453,7 +453,7 @@ textarea::-webkit-scrollbar-thumb {
   display: grid;
 }
 .big-classic-tarjet .fs-1 {
-  opacity: 1;
+  visibility: visible;
   display: grid;
   height: 100%;
   justify-items: center;
@@ -470,13 +470,12 @@ textarea::-webkit-scrollbar-thumb {
   border-radius: 100%;
 }
 .big-classic-tarjet .fs-2 {
-  opacity: 1;
+  visibility: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 85vw;
   height: 80vh;
   position: absolute;
-  opacity: 0;
 }
 .big-classic-tarjet .fs-2 h2 {
   color: white;
@@ -504,7 +503,7 @@ textarea::-webkit-scrollbar-thumb {
   width: 85vw;
 }
 .big-classic-tarjet:hover .fs-1 {
-  opacity: 0;
+  visibility: hidden;
 }
 .big-classic-tarjet:hover .fs-2 {
   animation: show-items 0.1s 0.5s linear forwards;
@@ -512,7 +511,7 @@ textarea::-webkit-scrollbar-thumb {
 
 @keyframes show-items {
   to {
-    opacity: 1;
+    visibility: visible;
   }
 }
 .thin-tarjet-1 {
