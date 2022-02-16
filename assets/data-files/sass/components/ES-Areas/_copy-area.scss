@@ -1,15 +1,22 @@
 textarea {
     height: 41vh;
     width: 50vw;
-    background: #2e3440;
-    color: rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
     margin-top: -2vh;
     margin-left: -1vh;
     border-left: 2px solid rgb(255, 255, 255) !important;
+    border: none;
 }
-
+textarea::-webkit-scrollbar{
+    background-color: transparent;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+}
 .large-card-clasic-code {
-    background-color: rgb(255, 255, 255);
+    color: white;
     display: none;
     grid-template-columns: repeat(2, 1fr);
     width: 100vw;

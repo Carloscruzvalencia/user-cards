@@ -13,6 +13,11 @@ html body {
   margin: 0;
   overflow-x: hidden;
   user-select: none;
+  background-image: url(../../media/img/background/background.jfif);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 html a {
   font-size: 1.5em;
@@ -48,9 +53,9 @@ html main {
 }
 
 header {
-  background-color: #161616db;
+  background-color: #353535ea;
   position: absolute;
-  height: 5vh;
+  height: 6vh;
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -65,10 +70,6 @@ header .hd-text {
 
 .landing {
   display: grid;
-  background-image: url(../../media/img/background/casey-horner-1sim8ojvCbE-unsplash.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
   width: 100vw;
 }
@@ -79,9 +80,10 @@ header .hd-text {
   color: white;
   font-family: var(--pacificoxregular);
   grid-area: 1/1;
+  position: relative;
 }
 .landing .tl-line {
-  height: 0.3vh;
+  height: 0.7vh;
   width: 0vw;
   background-color: white;
   grid-area: 1/1;
@@ -89,18 +91,21 @@ header .hd-text {
   align-self: center;
   margin-top: 13vh;
   animation: hr-sz linear 2s forwards;
+  border: none;
+  border-radius: 10px;
 }
 
 @keyframes hr-sz {
-  to {
+  0% {
+    width: 0vw;
+    background-color: grey;
+  }
+  100% {
     width: 49vw;
+    background-color: white;
   }
 }
 .large-card-clasic {
-  background-image: url(../../media/img/background/img-1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   overflow: hidden;
   display: grid;
   justify-content: center;
@@ -109,18 +114,36 @@ header .hd-text {
   margin-top: -0.2vh;
 }
 
+.big-animated-card {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
 textarea {
   height: 41vh;
   width: 50vw;
-  background: #2e3440;
+  background-color: transparent;
   color: white;
   margin-top: -2vh;
   margin-left: -1vh;
   border-left: 2px solid white !important;
+  border: none;
+}
+
+textarea::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
 }
 
 .large-card-clasic-code {
-  background-color: white;
+  color: white;
   display: none;
   grid-template-columns: repeat(2, 1fr);
   width: 100vw;
@@ -193,10 +216,6 @@ textarea {
 }
 
 .thin-cards {
-  background-image: url(../../media/img/background/thin-cards-background.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   height: 100vh;
   width: 100vw;
   display: grid;
@@ -412,7 +431,7 @@ textarea {
 
 .tarjet-container:hover {
   border-radius: 30px;
-  background-color: #eeeded;
+  background-color: #bebebe;
 }
 
 .tarjet-container:hover .Tarjet-breakline {
@@ -423,6 +442,78 @@ textarea {
   border-radius: 50px;
 }
 
+.big-classic-tarjet {
+  background-image: url(../../media/img/user-images/user-5-bk.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 22vw;
+  height: 80vh;
+  border-radius: 10px;
+  transition: 0.5s linear;
+  display: grid;
+}
+.big-classic-tarjet .fs-1 {
+  visibility: visible;
+  display: grid;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+}
+.big-classic-tarjet .fs-1 h2 {
+  align-self: start;
+  font-size: 1.7vw;
+  color: white;
+}
+.big-classic-tarjet .lg-card-img {
+  width: 13vw;
+  height: 22vh;
+  border-radius: 100%;
+}
+.big-classic-tarjet .fs-2 {
+  visibility: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 85vw;
+  height: 80vh;
+  position: absolute;
+}
+.big-classic-tarjet .fs-2 h2 {
+  color: white;
+  align-self: end;
+  margin-bottom: 2vh;
+  font-size: 1.7vw;
+}
+.big-classic-tarjet .fs-2 p {
+  grid-area: 2/2;
+  font-size: 1.5vw;
+  color: white;
+  justify-self: center;
+  align-self: flex-start;
+}
+.big-classic-tarjet .lg-card-img2 {
+  width: 22vw;
+  height: 36vh;
+  border-radius: 17px;
+  justify-self: center;
+  align-self: center;
+  grid-area: 1/2/3/1;
+}
+
+.big-classic-tarjet:hover {
+  width: 85vw;
+}
+.big-classic-tarjet:hover .fs-1 {
+  visibility: hidden;
+}
+.big-classic-tarjet:hover .fs-2 {
+  animation: show-items 0.1s 0.5s linear forwards;
+}
+
+@keyframes show-items {
+  to {
+    visibility: visible;
+  }
+}
 .thin-tarjet-1 {
   background-color: white;
   width: 25vw;
