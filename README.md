@@ -31,7 +31,7 @@ lenguajes/frameworks usados
 ## Estado del proyecto
 |             ESTADO                |             |
 | -------------------------- | :----------------: | 
-| Trabajando en otro proyecto           |         2 semanas     |  
+| TERMINADO           |          ✔️    |  
 
 ## Vista previa del proyecto
 <img src="project-preview.gif" aling="center"></img>
