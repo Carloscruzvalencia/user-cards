@@ -34,7 +34,7 @@ lenguajes/frameworks usados
 | Trabajando en otro proyecto           |         2 semanas     |  
 
 ## Vista previa del proyecto
-<video src="preview.mp4" autoplay height="400"></video>
+<img src="project-preview.gif" aling="center"></img>
 
 ## Requisitos
 
