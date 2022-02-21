@@ -34,7 +34,7 @@ lenguajes/frameworks usados
 | Trabajando en otro proyecto           |         2 semanas     |  
 
 ## Vista previa del proyecto
-<img src="Proyect-preview.png" aling="center"></img>
+<video src="preview.mp4" autoplay></video>
 
 ## Requisitos
 
@@ -55,5 +55,5 @@ choco install sass
 sass --watch assets/data-files/sass/styles.scss assets/data-files/css/custom.css
 ```
 ## Licencia
-Este proyecto está bajo la Licencia (MIT) - mira el archivo LICENSE.md para mas detalles
+Este proyecto está bajo la Licencia (MIT) - mira el archivo <a src="license">LICENSE.md</a>  para mas detalles
 
