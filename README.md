@@ -34,7 +34,7 @@ lenguajes/frameworks usados
 | Trabajando en otro proyecto           |         2 semanas     |  
 
 ## Vista previa del proyecto
-<video src="preview.mp4" autoplay></video>
+<video src="preview.mp4" autoplay height="400"></video>
 
 ## Requisitos
 
@@ -55,5 +55,5 @@ choco install sass
 sass --watch assets/data-files/sass/styles.scss assets/data-files/css/custom.css
 ```
 ## Licencia
-Este proyecto está bajo la Licencia (MIT) - mira el archivo <a src="license">LICENSE.md</a>  para mas detalles
+Este proyecto está bajo la Licencia (MIT) - mira el archivo <a href="https://github.com/Carloscruzvalencia/user-cards/blob/main/LICENSE">LICENSE.md</a>  para mas detalles
 
