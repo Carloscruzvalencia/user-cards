@@ -19,15 +19,15 @@
     .Content-container{
         display: grid;
         .clasic-tj-tl{
-            position: absolute;
-            align-self: center;
-            margin-top: -26vh;
-            height: auto;
+            align-items: center;
+            justify-items: center;
+            display: grid;
         }
         .user-name{
-            font-size: 3em;
+            font-size: 5.5vh;
             align-self: end;
             grid-area: 1/1;
+            margin-bottom: 1vh;
         }
         .Tarjet-breakline{
             align-self: end;
@@ -37,10 +37,11 @@
             grid-area: 1/1;
             margin-left: 0vw;
             width: 0vw;
+            margin-bottom: 1vh;
             transition: 1s;
         }
         .Tarjet-description{
-            font-size: 1.3em;
+            font-size: 2vw;
             text-align: justify;
             width: 40vw;
             justify-self: start;

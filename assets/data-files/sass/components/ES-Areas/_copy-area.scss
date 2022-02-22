@@ -51,6 +51,7 @@ textarea::-webkit-scrollbar-thumb{
 
             h2 {
                 margin-bottom: 1vh;
+                color: white;
             }
         }
 
@@ -72,6 +73,7 @@ textarea::-webkit-scrollbar-thumb{
 
             h2 {
                 margin-bottom: 1vh;
+                color: white;
             }
         }
 
@@ -93,6 +95,7 @@ textarea::-webkit-scrollbar-thumb{
 
             h2 {
                 margin-bottom: 1vh;
+                color: white;
             }
         }
 
@@ -100,5 +103,27 @@ textarea::-webkit-scrollbar-thumb{
             margin-top: 1vh;
             
         }
+    }
+}
+.cop2{
+    display: grid;
+    #CodeSection12{
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 47vh 5vh;
+        .copy3{
+            display: grid;
+            grid-template-rows: 7vh 40vh;
+            justify-items: center;
+            align-items: center;
+        }
+        h2 {
+            margin-bottom: 1vh;
+            color: white;
+        }
+    }
+    button {
+        margin-top: 1vh;
+        
     }
 }
