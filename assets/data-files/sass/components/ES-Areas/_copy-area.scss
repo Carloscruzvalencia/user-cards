@@ -1,15 +1,22 @@
 textarea {
     height: 41vh;
     width: 50vw;
-    background: #2e3440;
-    color: rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
     margin-top: -2vh;
     margin-left: -1vh;
     border-left: 2px solid rgb(255, 255, 255) !important;
+    border: none;
 }
-
+textarea::-webkit-scrollbar{
+    background-color: transparent;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+}
 .large-card-clasic-code {
-    background-color: rgb(255, 255, 255);
+    color: white;
     display: none;
     grid-template-columns: repeat(2, 1fr);
     width: 100vw;
@@ -44,6 +51,7 @@ textarea {
 
             h2 {
                 margin-bottom: 1vh;
+                color: white;
             }
         }
 
@@ -65,6 +73,7 @@ textarea {
 
             h2 {
                 margin-bottom: 1vh;
+                color: white;
             }
         }
 
@@ -86,6 +95,7 @@ textarea {
 
             h2 {
                 margin-bottom: 1vh;
+                color: white;
             }
         }
 
@@ -93,5 +103,27 @@ textarea {
             margin-top: 1vh;
             
         }
+    }
+}
+.cop2{
+    display: grid;
+    #CodeSection12{
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 47vh 5vh;
+        .copy3{
+            display: grid;
+            grid-template-rows: 7vh 40vh;
+            justify-items: center;
+            align-items: center;
+        }
+        h2 {
+            margin-bottom: 1vh;
+            color: white;
+        }
+    }
+    button {
+        margin-top: 1vh;
+        
     }
 }

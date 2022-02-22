@@ -1,21 +1,18 @@
 .landing {
     display: grid;
-    background-image: url(../../media/img/background/casey-horner-1sim8ojvCbE-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh;
     width: 100vw;
     h1{
-        font-size: 7em;
+        font-size: 5.8vw;
         justify-self: center;
         align-self: center;
         color: white;
         font-family: var(--pacificoxregular);
         grid-area: 1/1;
+        position: relative;
     }
     .tl-line{
-        height: 0.3vh;
+        height: 0.7vh;
         width: 0vw;
         background-color: white;
         grid-area: 1/1;
@@ -23,10 +20,17 @@
         align-self: center;
         margin-top: 13vh;
         animation: hr-sz linear 2s forwards;
+        border: none;
+        border-radius: 10px;
     }
 }
 @keyframes hr-sz {
-    to{
-        width: 49vw;
+    0%{
+        width: 0vw;
+        background-color: grey;
+    }
+    100%{
+        width: 50vw;
+        background-color: white;
     }    
 }

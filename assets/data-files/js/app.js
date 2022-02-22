@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded",
                 scrollTrigger: ".thin-cards",
                 toggleActions:"restart resume reverse resume",
                 scrub: true,
-                start: "1400vh",
-                end: "1600vh",
+                start: "2200vh",
+                end: "2600vh",
             },
             y: vh(-100),
             duration: 2,
@@ -145,6 +145,30 @@ function copyFunction8() {
     var tooltip = document.getElementById("myTooltip8");
     tooltip.innerHTML = "Copiado";
 }
+function copyFunction9() {
+    /* Get the text field */
+    var copyText = document.getElementById("copyhtml9");
+
+    /* Select the text field */
+    copyText.select();
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText.value)
+
+    var tooltip = document.getElementById("myTooltip9");
+    tooltip.innerHTML = "Copiado";
+}
+function copyFunction10() {
+    /* Get the text field */
+    var copyText = document.getElementById("copycss10");
+
+    /* Select the text field */
+    copyText.select();
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText.value)
+
+    var tooltip = document.getElementById("myTooltip10");
+    tooltip.innerHTML = "Copiado";
+}
 // ======================= display code block sections ========================
 function DisplayFunction() {
     var x = document.getElementById("CodeSection1");
@@ -196,6 +220,14 @@ function DisplayFunction4() {
         x1.style.display = "none";
         x2.style.display = "grid";
     } 
+}
+function DisplayFunction5() {
+    var x = document.getElementById("CodeSection12");
+    if (x.style.display == "grid") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "grid";
+    }
 }
 // ======================== textillate ============================
 $(function () {

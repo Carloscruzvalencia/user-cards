@@ -1,7 +1,7 @@
 header{
-    background-color: #161616db;
+    background-color: #353535ea;
     position: absolute;
-    height: 5vh;
+    height: 6vh;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -11,5 +11,6 @@ header{
         justify-self: center;
         grid-area: 1/3/1/1;
         margin-right: 5vw;
+        font-size: 1.5vh;
     }
 }

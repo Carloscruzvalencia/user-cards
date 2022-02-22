@@ -1,0 +1,73 @@
+.big-classic-tarjet{
+    background-image: url(../../media/img/user-images/user-5-bk.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 22vw;
+    height: 80vh;
+    border-radius: 10px;
+    transition: 0.5s linear;
+    display: grid;
+    .fs-1{
+        visibility: visible;
+        display: grid;
+        height: 100%;
+        justify-items: center;
+        align-items: center;
+        h2{
+            align-self: start;
+            font-size: 1.7vw;
+            color: white;
+        }
+    }
+    .lg-card-img{
+        width: 13vw;
+        height: 22vh;
+        border-radius: 100%;
+    }
+    .fs-2{
+        visibility: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 85vw;
+        height: 80vh;
+        position: absolute;
+        left: 10vw;
+        h2{
+            color: white;
+            align-self: end;
+            margin-bottom: 2vh;
+            font-size: 1.7vw;
+        }
+        p{
+            grid-area: 2/2;
+            font-size: 1.5vw;
+            color: white;
+            justify-self: center;
+            align-self: flex-start;
+        }
+    }
+    .lg-card-img2{
+        width: 22vw;
+        height: 36vh;
+        border-radius: 17px;
+        justify-self: center;
+        align-self: center;
+        grid-area: 1/2/3/1;
+    }
+
+}
+.big-classic-tarjet:hover{
+    width: 85vw;
+    .fs-1{
+        visibility: hidden;
+    }
+    .fs-2{
+        animation: show-items 0.1s 0.5s linear forwards;
+        left: 0vw !important;
+    }
+}
+@keyframes show-items {
+    to{
+        visibility: visible;
+    }    
+}

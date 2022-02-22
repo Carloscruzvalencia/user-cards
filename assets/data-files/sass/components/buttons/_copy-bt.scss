@@ -8,6 +8,7 @@
     margin-top: 10vh;
     cursor: pointer;
     animation: pulseEF linear 1.5s infinite reverse;
+    font-size: 1.5vh;
 }
 .copy-code{
     justify-self: center;
@@ -15,7 +16,7 @@
     margin-top: -3vh;
 }
 .code-title{
-    justify-self: center
+    justify-self: center;
 }
 @keyframes pulseEF {
     to{

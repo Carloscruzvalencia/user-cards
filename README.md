@@ -31,10 +31,10 @@ lenguajes/frameworks usados
 ## Estado del proyecto
 |             ESTADO                |             |
 | -------------------------- | :----------------: | 
-| Trabajando en otro proyecto           |         2 semanas     |  
+| TERMINADO           |          ✔️    |  
 
 ## Vista previa del proyecto
-<img src="Proyect-preview.png" aling="center"></img>
+<img src="project-preview.gif" aling="center"></img>
 
 ## Requisitos
 
@@ -55,5 +55,5 @@ choco install sass
 sass --watch assets/data-files/sass/styles.scss assets/data-files/css/custom.css
 ```
 ## Licencia
-Este proyecto está bajo la Licencia (MIT) - mira el archivo LICENSE.md para mas detalles
+Este proyecto está bajo la Licencia (MIT) - mira el archivo <a href="https://github.com/Carloscruzvalencia/user-cards/blob/main/LICENSE">LICENSE.md</a>  para mas detalles
 
