@@ -36,24 +36,6 @@ lenguajes/frameworks usados
 ## Vista previa del proyecto
 <img src="project-preview.gif" aling="center"></img>
 
-## Requisitos
-
-### Instalacion
-sass
-
-via npm
-```shell
-npm install -g sass
-```
-via Chocolatey
-```shell
-choco install sass
-```
-
-### En desarrollo
-```shell
-sass --watch assets/data-files/sass/styles.scss assets/data-files/css/custom.css
-```
 ## Licencia
 Este proyecto está bajo la Licencia (MIT) - mira el archivo <a href="https://github.com/Carloscruzvalencia/user-cards/blob/main/LICENSE">LICENSE.md</a>  para mas detalles
 
